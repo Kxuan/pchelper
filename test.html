@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div style="position: fixed;">
+    <button onclick="fill()">fill</button>
+    <button onclick="clip()">clip</button>
+</div>
+<canvas id="hop" onclick="test()"></canvas>
+<script type="text/javascript">
+    hop.width = window.innerWidth;
+    hop.height = window.innerHeight;
+    var c = hop.getContext('2d');
+    function fill(){
+        c.fillStyle = 'skyblue';
+        c.fill();
+    }
+    function clip() {
+        var BlockWidth = 100;
+        var fWidth = 10;
+        c.beginPath();
+        for (var x = 0; x < hop.width; x += fWidth * 2) {
+            c.rect(x, 0, fWidth, hop.height);
+        }
+        c.clip();
+        c.fillStyle='white';
+        c.fill();
+        c.closePath();
+    }
+</script>
+</body>
+</html>

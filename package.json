@@ -1,0 +1,12 @@
+{
+  "name": "PCHelper",
+  "version": "0.1",
+  "main": "index.html",
+  "window": {
+    "width": 900,
+    "height": 500,
+    "show": false,
+    "frame": false,
+    "toolbar": false
+  }
+}
