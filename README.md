@@ -5,10 +5,10 @@ This is a nw.js UI Framework demo.
 
 Feature
 --------
-Custom Cursor Icon
-Element Animation
-Screen Switching Animation
-Opacity
+- Custom Cursor Icon
+- Element Animation
+- Screen Switching Animation
+- Opacity
 
 
 Supported Controls:
